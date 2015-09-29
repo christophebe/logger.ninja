@@ -1,0 +1,16 @@
+{
+  "name": "crawler-ninja-logger",
+  "version": "1.0.0",
+  "description": "Common log method for all crawler.ninja plugins",
+  "main": "index.js",
+  "dependencies" : {
+    "bunyan": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christophebe/logger.ninja"
+  },
+  "homepage": "https://github.com/christophebe/logger.ninja",
+  "author": "Christophe Lombart",
+  "license": "Apache"
+}
