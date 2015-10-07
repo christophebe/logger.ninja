@@ -1,6 +1,6 @@
 {
   "name": "crawler-ninja-logger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Common log method for all crawler.ninja plugins",
   "main": "index.js",
   "dependencies" : {

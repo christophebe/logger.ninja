@@ -9,11 +9,16 @@ var bunyan = require("bunyan");
  *  - message
  *  - options
  *
- * @return
  */
 
-var infoFile = process.cwd() + "/logs/crawler.log";
-var debugFile = process.cwd() + "/logs/debug.log";
+var logFolder = process.cwd() + "/logs" ;
+
+if (! fs.existsSync(logFolder)) {
+    fs.mkdirSync(logFolder);
+}
+
+var infoFile =  logFolder + "/crawler.log";
+var debugFile = logFolder + "/logs/debug.log";
 
 console.log("Use info log in : " + infoFile);
 console.log("Use debug log in : " + debugFile);
