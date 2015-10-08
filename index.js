@@ -18,7 +18,7 @@ if (! fs.existsSync(logFolder)) {
 }
 
 var infoFile =  logFolder + "/crawler.log";
-var debugFile = logFolder + "/logs/debug.log";
+var debugFile = logFolder + "/debug.log";
 
 console.log("Use info log in : " + infoFile);
 console.log("Use debug log in : " + debugFile);
