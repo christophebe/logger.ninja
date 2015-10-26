@@ -18,10 +18,9 @@ if (! fs.existsSync(logFolder)) {
 }
 
 var infoFile =  logFolder + "/crawler.log";
-var debugFile = logFolder + "/debug.log";
 
-console.log("Use info log in : " + infoFile);
-console.log("Use debug log in : " + debugFile);
+
+console.log("Log into the file : " + infoFile);
 
 
 /**
@@ -29,23 +28,17 @@ console.log("Use debug log in : " + debugFile);
  *
  */
 var Logger = bunyan.createLogger({
-  name: 'full-log',
+  name: 'crawl-log',
   streams: [
     {
       type: 'rotating-file',
       period : '5h',
       path: infoFile,
-      level : 'info'
-    },
-    {
-      type: 'rotating-file',
-      period : '5h',
-      level: 'debug',
-      path: debugFile,
-
-    },
+      level : 'debug'
+    }
   ]
 });
+
 
 /**
  * If needed, a plugin can create a specific log
