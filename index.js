@@ -48,7 +48,7 @@ var Logger = bunyan.createLogger({
  * @param the json config structure (see bunyan documemntion )
  * @return the new logger
  */
-var createLogger = function(name, streamInfo) {
+function createLogger(name, streamInfo) {
   return bunyan.createLogger({
     name: name,
     streams: [
